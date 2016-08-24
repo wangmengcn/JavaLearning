@@ -1,0 +1,57 @@
+#login-title {
+	margin-top: 150px;
+	text-align:center;
+}
+
+#sub-title {
+	text-align:center;
+}
+
+#register-tab {
+	margin-left: 80px;
+	margin-bottom: 0px;
+}
+
+#login-tab {
+	margin-bottom: 0px;
+}
+
+#login-link {
+	border: 0px;
+}
+
+#register-link {
+	border: 0px;
+}
+
+#register-group {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#register-group input {
+	border-radius: 0px;
+}
+
+#register-group button {
+	border-radius: 0px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+#login-group {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#login-group input {
+	border-radius: 0px;
+}
+
+#login-group button {
+	border-radius: 0px;
+	width: 100%;
+	margin-top: 10px;
+}
