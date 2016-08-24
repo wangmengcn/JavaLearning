@@ -25,7 +25,7 @@ public class MemberController {
     public String registerUser(ModelMap model){
         Member member = new Member();
         model.addAttribute("member",member);
-        return "login";
+        return "chatroom";
     }
 
     @RequestMapping(method = RequestMethod.POST)
