@@ -25,7 +25,7 @@ public class MemberController {
     public String registerUser(ModelMap model){
         Member member = new Member();
         model.addAttribute("member",member);
-        return "chatroom";
+        return "login";
     }
 
     @RequestMapping(method = RequestMethod.POST)
@@ -36,6 +36,7 @@ public class MemberController {
         }
         repository.save(member);
         System.out.println(member.getId());
+        model.addAttribute("username",member.getUsername());
         return "chatroom";
     }
 
@@ -44,6 +45,7 @@ public class MemberController {
         Member currentUser = repository.findByusername(member.getUsername());
         System.out.println(currentUser.getId());
         if(currentUser.getPassword().equals(member.getPassword())){
+            model.addAttribute("username",member.getUsername());
             return "chatroom";
         }
         return "login";
