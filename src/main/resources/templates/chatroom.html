@@ -20,7 +20,7 @@
 
 			<div class="col-md-offset-1 col-md-10" id="message-panel" style="padding:0px">
 			 	<div class="container-fluid" style="padding:0px;margin:0px;">
-			 		<form action="">
+			 		<form onsubmit="return sendMsg();">
 					<div class="input-group">
 						<span id="username" th:text="${username}" class="input-group-addon"></span>
 						<input type="text" class="form-control" id="send-message" placeholder="输入消息"></input>
