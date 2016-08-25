@@ -8,7 +8,7 @@
 }
 
 #register-tab {
-	margin-left: 80px;
+	margin-left: 30%;
 	margin-bottom: 0px;
 }
 
@@ -58,11 +58,36 @@
 
 #chatpanel {
 	height: 500px;
-	background-color: antiquewhite;
+	background-color: #BDC0BA;
+	overflow:auto;
 }
 
 #message-panel {
 	margin-top: 20px;
 	padding-left: 0px;
 	padding-right: 0px;
+}
+
+div.popover {
+	border-radius: 0px;
+}
+
+div.popover.right {
+	margin-left: 3%;
+	display: block;
+	position: relative;
+	word-break: break-word;
+}
+
+div.popover.left {
+	float: right;
+	margin-right: 3%;
+	display: block;
+	position: relative;
+	word-break: break-word;
+	min-width: 272px;
+}
+
+div.row.message {
+	margin-top: 3px;
 }
