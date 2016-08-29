@@ -15,5 +15,3 @@ hs_err_pid*
 .idea/
 webflow.iml
 target/
-pom.xml
-src/

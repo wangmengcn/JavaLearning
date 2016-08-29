@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
+		<link rel="stylesheet" href="/static/css/login.css"></link>
+		<script src="static/script/stomp.js"></script>
+		<script src="static/script/message.js"></script>
+	</head>
+	<body onload="connect()">
+		<div class="container-fluid">
+			<div class="page-header">
+				<h1>科研开发室 <small>工作频道</small></h1>
+			</div>
+			<div class="col-md-offset-1 col-md-10" style="padding:0px;">
+				<div class="container-fluid" id="chatpanel" data-spy="affix" data-offset-top="60" data-offset-bottom="20">
+					
+				</div>
+
+			</div>
+
+			<div class="col-md-offset-1 col-md-10" id="message-panel" style="padding:0px">
+			 	<div class="container-fluid" style="padding:0px;margin:0px;">
+			 		<form onsubmit="return sendMsg();">
+					<div class="input-group">
+						<span id="username" th:text="${username}" class="input-group-addon"></span>
+						<input type="text" class="form-control" id="send-message" placeholder="输入消息"></input>
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button" onclick="sendMsg()">发送</button>
+						</span>
+						</div>
+					</form>
+			 	</div>
+			</div>
+		</div>
+	</body>
+	<footer>
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="//cdn.jsdelivr.net/sockjs/1/sockjs.min.js"></script>
+
+	</footer>
+</html>

@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
+		<link rel="stylesheet" href="/static/css/login.css"></link>
+	</head>
+	<body>
+		<div class="container-fluid" id="fullscreen">
+			<div class="col-md-offset-4 col-md-4">
+				<h1 id="login-title">科研开发室</h1>
+				<h3 id="sub-title">工作频道</h3>
+				<div class="container-fluid">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li id="register-tab" role="presentation" class="active"><a href="#home" id="register-link" aria-controls="home" role="tab" data-toggle="tab">注册</a></li>
+						<li id="login-tab" role="presentation"><a href="#profile" id="login-link" aria-controls="profile" role="tab" data-toggle="tab">登录</a></li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="home">
+							<form method="POST" class="form-horizontal" th:action="@{/}" th:object="${member}">
+								<div id="register-group" class="input-group">
+									<input type="text" th:field="*{username}" class="form-control" placeholder="用户名" aria-describedby="basic-addon2"></input>
+									<input type="email" th:field="*{email}" class="form-control" placeholder="邮箱" aria-describedby="basic-addon2"></input>
+									<input type="password" th:field="*{password}" class="form-control" placeholder="密码" aria-describedby="basic-addon2"></input>
+								<button type="submit" class="btn btn-primary">确认注册</button>
+							</div>
+							</form>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="profile">
+							<form method="POST" class="form-horizontal" th:action="@{/login}" th:object="${member}">
+								<div id="login-group" class="input-group">
+									<input type="text" th:field="*{username}" class="form-control" placeholder="用户名" aria-describedby="basic-addon2"></input>
+									<input type="password" th:field="*{password}" class="form-control" placeholder="密码" aria-describedby="basic-addon2"></input>
+									<button type="submit" class="btn btn-primary">点击登录</button>
+								</div>
+							</form>				
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+	<footer>
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</footer>
+</html>
