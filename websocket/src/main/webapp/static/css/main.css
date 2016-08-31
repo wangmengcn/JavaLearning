@@ -1,0 +1,53 @@
+.container-fluid {
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.groupitem {
+	margin-right: 15px;
+	margin-left: 15px;
+	width: 10%;
+	float: left;
+}
+
+#navheader {
+	margin-bottom: 0px;
+}
+
+#verticalnav {
+	text-align: center;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#pageheader {
+	margin-left: 90px;
+	margin-top: 30px;
+	margin-right: 90px;
+}
+
+#grouppanel {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+#taskpanel {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+#usergroup {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+#adduser {
+	float: left;
+	margin-left: 15px;
+	margin-top: 20px;
+}
+

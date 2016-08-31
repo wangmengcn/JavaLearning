@@ -16,3 +16,6 @@ hs_err_pid*
 webflow.iml
 target/
 *.iml
+*.jpep
+*.png
+*.jpg
